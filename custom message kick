@@ -1,0 +1,10 @@
+-- Function to kick a player with a custom message
+local function kickPlayerWithMessage(playerToKick, kickMessage)
+    playerToKick:Kick(kickMessage)
+end
+
+-- Example: Kicking a player named "Player3" with a custom message
+local player3 = game.Players:FindFirstChild("Player3")
+if player3 then
+    kickPlayerWithMessage(player3, "You have been kicked for violating the rules.")
+end
